@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export class Form extends Component {
   static propTypes = {
-    onSubmit: PropTypes.func,
+    onAddContacts: PropTypes.func.isRequired,
   };
   state = {
     name: '',
