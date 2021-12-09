@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import { ElemListContact } from '../ElemListContact';
 import style from './ContainerList.module.scss';
 export const ContactList = ({ contacts, onDeleteContact }) => (
   <ul className={style.list}>
     {contacts.map(({ id, name, number }) => (
       <li key={id} className={style.item}>
-        <i>{name}:</i>
-        <b>{number}</b>
-
-        <button className={style.button} onClick={() => onDeleteContact(id)}>
-          Delete
-        </button>
+        <ElemListContact
+          name={name}
+          number={number}
+          id={id}
+          func={onDeleteContact}
+        />
       </li>
     ))}
   </ul>

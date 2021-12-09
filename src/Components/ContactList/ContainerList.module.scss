@@ -14,14 +14,3 @@
   font-weight: 700;
   font-size: 18px;
 }
-.button {
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid red;
-  background-color: red;
-  &:hover,
-  &:focus {
-    background-color: green;
-    border: 1px solid green;
-  }
-}
